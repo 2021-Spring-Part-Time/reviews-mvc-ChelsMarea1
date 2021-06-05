@@ -19,7 +19,7 @@ public class ReviewController {
         return "reviewsTemplate";
     }
 
-    @RequestMapping("/course")
+    @RequestMapping("/review")
     public String findOneReview(@RequestParam(value = "id") Long id, Model model) {
         model.addAttribute("reviewModel", reviewRepo.findOne(id));
         return "reviewTemplate";
