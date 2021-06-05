@@ -39,9 +39,9 @@ public class ReviewControllerMvcTest {
     @Test
     public void shouldFindAllReviewsInModel() throws Exception {
         Collection<Review> allReviewsInModel = Arrays.asList(reviewOne, reviewTwo);
-        when(reviewRepo.findAll().thenReturn(allReviewsInModel));
-        mockMvc.perform(get("reviews"))
-                .andExpect(model().attribute("reviewsModel", allReviewsInModel))
+        when(reviewRepo.findAll()).thenReturn(allReviewsInModel);
+        mockMvc.perform(get("/reviews"))
+                .andExpect(model().attribute("reviewsModel", allReviewsInModel));
     }
     @Test
     public void shouldBeOkForOneReviewInTheReviewTemplate() throws Exception {

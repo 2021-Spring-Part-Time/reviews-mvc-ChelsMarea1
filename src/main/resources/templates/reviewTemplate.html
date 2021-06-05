@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${courseModel.name}">My Review</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.name}">My Review</h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/reviews">Review</a></p>
+        <li th:text="${reviewModel.name}"></li>
+    </ul>
+    <h2 th:text="${reviewModel.description}"></h2>
+</main>
+
+<footer>
+    <small>&copy BTC 2021</small>
+</footer>
+
+</body>
+</html>

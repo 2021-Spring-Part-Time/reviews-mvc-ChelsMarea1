@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reviews of songs I listen to</title>
+</head>
+<body>
+
+<header>
+    <h1>My Favorite Type Gospel Song Depending On What I'm Doing</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy BTC 2021</small>
+</footer>
+
+</body>
+</html>
