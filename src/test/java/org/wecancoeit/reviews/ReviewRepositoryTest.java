@@ -21,7 +21,7 @@ public class ReviewRepositoryTest {
         assertEquals(reviewOne, foundReview);
     }
     @Test
-    public void shoudFindReviewOneAndReviewTwo() {
+    public void shouldFindReviewOneAndReviewTwo() {
         underTest = new ReviewRepository(reviewOne, reviewTwo);
         Collection<Review> foundReviews = underTest.findAll();
         assertThat(foundReviews).contains(reviewOne, reviewTwo);
