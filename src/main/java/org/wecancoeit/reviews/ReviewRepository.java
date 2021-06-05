@@ -12,9 +12,9 @@ public class ReviewRepository {
     Map<Long, Review> reviewsList = new HashMap<>();
 
     public ReviewRepository() {
-        Review johnPKee = new Review(1L, "Strength", "", "Praise", "");
-        Review fredHammond = new Review(2L, "Please Don't Pass Me By", "", "Worship", "");
-        Review kirkFranklin = new Review(3L, "Love Theory", "", "Workout", "");
+        Review johnPKee = new Review(1L, "Strength", "/images/jpk.jpg", "Praise", "");
+        Review fredHammond = new Review(2L, "Please Don't Pass Me By", "/images/fh.jpg", "Worship", "");
+        Review kirkFranklin = new Review(3L, "Love Theory", "/images/kf.jpg", "Exercise", "");
 
         reviewsList.put(johnPKee.getId(), johnPKee);
         reviewsList.put(fredHammond.getId(), fredHammond);
