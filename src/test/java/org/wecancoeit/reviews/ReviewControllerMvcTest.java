@@ -49,7 +49,7 @@ public class ReviewControllerMvcTest {
                 .andExpect(view().name("reviewTemplate"));
     }
     @Test
-    public void shouldFindCReviewOneInModel() throws Exception {
+    public void shouldFindReviewOneInModel() throws Exception {
         Long reviewOneId = 1L;
         when(reviewRepo.findOne(reviewOneId)).thenReturn(reviewOne);
         mockMvc.perform(get("/review?id=1"))
