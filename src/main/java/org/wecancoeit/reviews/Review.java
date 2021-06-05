@@ -28,7 +28,7 @@ public class Review {
         return content;
     }
 
-    public Review(long l, String title, String image, String category, String content) {
+    public Review(long id, String title, String image, String category, String content) {
         this.id = id;
         this.title = title;
         this.image = image;
