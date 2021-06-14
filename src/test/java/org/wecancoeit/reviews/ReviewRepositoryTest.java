@@ -11,8 +11,8 @@ public class ReviewRepositoryTest {
 
     private ReviewRepository underTest;
 
-    private Review reviewOne = new Review(1L, "review one title", " ", "review category", "review content");
-    private Review reviewTwo = new Review(2L, "review two title", " ", "review category", "review content");
+    private Review reviewOne = new Review(1L, "review one title", " ", "", "review category", "review content");
+    private Review reviewTwo = new Review(2L, "review two title", " ", "", "review category", "review content");
 
     @Test
     public void shouldFindReviewOne() {

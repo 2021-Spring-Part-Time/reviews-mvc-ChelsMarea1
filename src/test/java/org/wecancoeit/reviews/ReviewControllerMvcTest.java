@@ -43,6 +43,8 @@ public class ReviewControllerMvcTest {
         mockMvc.perform(get("/reviews"))
                 .andExpect(model().attribute("reviewsModel", allReviewsInModel));
     }
+
+    // test that fails
     @Test
     public void shouldBeOkForOneReviewInTheReviewTemplate() throws Exception {
         mockMvc.perform(get("/review?id=1")).andExpect(status().isOk())
