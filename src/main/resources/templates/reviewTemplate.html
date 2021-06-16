@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${reviewModel.title}">My Review</title>
-    <link rel="stylesheet" type="text/css" href="/resources/static/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="/css/review.css">
 </head>
 <body class="reviewContainer">
 
@@ -12,17 +12,16 @@
 
 <main>
     <ul>
-        <p><a href="/reviews">Review</a></p>
-        <li th:text="${reviewModel.title}"></li>
+        <p><a href="/reviews">CHECK OUT MY REVIEW!</a></p>
     </ul>
     <div>
-        <h2 th:text="${reviewModel.image}"></h2>
+        <img class="image" th:src="${reviewModel.image}"></img>
     </div>
     <div>
-        <h2 th:text="${reviewModel.artist}"></h2>
+        <h2 class="dark-blue" th:text="${reviewModel.artist}"></h2>
     </div>
     <div>
-        <h2 th:text="${reviewModel.category}"></h2>
+        <h2 class="dark-blue" th:text="${reviewModel.category}"></h2>
     </div>
     <div>
         <h2 th:text="${reviewModel.content}"></h2>
@@ -30,7 +29,7 @@
 </main>
 
 <footer>
-    <small>&copy BTC 2021</small>
+    <small class="black">&copy BTC 2021</small>
 </footer>
 
 </body>
