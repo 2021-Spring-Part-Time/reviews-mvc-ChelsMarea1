@@ -1,19 +1,19 @@
 body {
-    background-color: #a7b8c0;
-    height: 100px;
-    color: grey;
+background-color: #a7b8c0;
+color: grey;
+height: 100px;
 }
 #center-text{
-     text-align: center;
- }
+text-align: center;
+}
  ul#top-banner-list{
-     list-style: none;
-     padding-top: 10px;
-     }
+list-style: none;
+padding-top: 10px;
+}
  ul#top-banner-list li{
-     display: inline;
-     padding: 10px 40px;
-     color: violet;
+ color: violet;
+ display: inline;
+ padding: 10px 40px;
   }
   .gallery-with-image {
       align-items: center;
@@ -23,26 +23,27 @@ body {
       justify-content: center;
   }
   .images {
-      flex-grow: 1;
-      object-fit: cover;
-      vertical-align: bottom;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      height: 20vh;
-       }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: 20vh;
+  justify-content: center;
+  object-fit: cover;
+  vertical-align: bottom;
   }
+.fa {
+font-size: 30px;
+margin: 5px 2px;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+width: 50px;
+}
   .fa:hover {
-      opacity: 0.7;
+  opacity: 0.7;
   }
   
   .fa-facebook {
@@ -85,8 +86,8 @@ body {
       flex-direction: column;
     }
     footer {
+    color: white;
         text-align: center;
-        color: white;
     }
     .black {
     color: black;}

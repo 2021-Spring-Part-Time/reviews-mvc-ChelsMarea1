@@ -1,22 +1,23 @@
 body {
     background-color: #a7b8c0;
-    height: 100px;
     color: grey;
+    height: 100px;
     text-align: center;
-}
-.image {
-      flex-grow: 1;
-      object-fit: cover;
-     align-items: center;
-     justify-content: center;
-     height: 30vh;
-      }
-       footer {
-       text-align: center;
-       color: white;
-       }
- .black {
-    color: black;}
-    .dark-blue {
+    }
+    .image {
+    align-items: center;
+    flex-grow: 1;
+    height: 30vh;
+    justify-content: center;
+    object-fit: cover;
+    }
+    footer {
+    color: white;
+    text-align: center;
+    }
+    .black {
+    color: black;
+    }
+    dark-blue {
     color: #00003B
     }
