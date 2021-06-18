@@ -1,0 +1,93 @@
+body {
+background-color: #a7b8c0;
+color: grey;
+height: 100px;
+}
+#center-text{
+text-align: center;
+}
+ ul#top-banner-list{
+list-style: none;
+padding-top: 10px;
+}
+ ul#top-banner-list li{
+ color: violet;
+ display: inline;
+ padding: 10px 40px;
+  }
+  .gallery-with-image {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .images {
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: 20vh;
+  justify-content: center;
+  object-fit: cover;
+  vertical-align: bottom;
+  }
+.fa {
+font-size: 30px;
+margin: 5px 2px;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+width: 50px;
+}
+  .fa:hover {
+  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  @media only screen and (max-width: 961px) {
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+    color: white;
+        text-align: center;
+    }
+    .black {
+    color: black;}

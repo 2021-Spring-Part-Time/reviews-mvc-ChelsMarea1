@@ -1,0 +1,23 @@
+body {
+    background-color: #a7b8c0;
+    color: grey;
+    height: 100px;
+    text-align: center;
+    }
+    .image {
+    align-items: center;
+    flex-grow: 1;
+    height: 30vh;
+    justify-content: center;
+    object-fit: cover;
+    }
+    footer {
+    color: white;
+    text-align: center;
+    }
+    .black {
+    color: black;
+    }
+    dark-blue {
+    color: #00003B
+    }

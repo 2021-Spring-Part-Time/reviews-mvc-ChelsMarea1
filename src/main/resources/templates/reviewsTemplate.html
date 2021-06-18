@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reviews of songs I listen to</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="reviewsContainer">
+
+<header>
+    <h1 id="center-text">FAV SONG ALERT</h1>
+</header>
+
+<main>
+    <div id="center-text">
+        <ul id="top-banner-list">
+            <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"
+                                                     th:text="${review.category}"></a></li>
+        </ul>
+    </div>
+    <section class="gallery-with-image">
+        <div class="images">
+            <img class="images" src="/images/main-praise.jpg" alt="image of praise"/>
+            <img class="images" src="/images/main-worship.jpg" alt="image of worship"/>
+            <img class="images" src="/images/main-workout.jpg" alt="image of workout"/>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="footer-socialMedia">
+        <div id="center-text">
+            <h2>DON'T SEE YOUR FAV?</h2>
+            <h3>WE WOULD LOVE TO HEAR YOUR SUGGESTIONS!</h3>
+            <p>CONNECT WITH US</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+        </div>
+        <small class="black">&copy BTC 2021</small>
+    </section>
+</body>
+</html>
+</footer>
